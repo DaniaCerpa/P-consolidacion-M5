@@ -5,7 +5,7 @@
 SELECT * FROM country co
 JOIN city ci
 on co.country_id = ci.country_id
-WHERE country ILIKE 'Chile'
+WHERE country ILIKE 'Chile';
 
 
 SELECT * FROM city;
@@ -87,8 +87,7 @@ AND EXTRACT(MONTH FROM rental_date) = 7;
 --Listar Número, Fecha (payment_date) y Total (amount) de todas las “payment”.
 
 SELECT payment_id "Numero", payment_date "Fecha", amount "Total" FROM payment
-ORDER BY "Total"
-;
+ORDER BY "Total";
 
 
 --Listar todas las “film” del año 2006 que contengan un (rental_rate) mayor a 4.0.
@@ -110,5 +109,5 @@ INNER JOIN PG_CLASS t2 ON (t2.RELNAME = isc.TABLE_NAME)
 WHERE
 isc.TABLE_SCHEMA = 'public'
 ORDER BY
-isc.TABLE_NAME
+isc.TABLE_NAME;
 
